@@ -2,4 +2,4 @@
 *.exe
 *.dll
 /source/lib/
-/source/include/
+/source-include-SDL2
