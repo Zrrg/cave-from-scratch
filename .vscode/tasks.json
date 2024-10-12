@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+            "label": "Build with MSYS2 UCRT64 GCC 14.1.0",
+			"command": "g++",
+			"args": [
+				"-g",
+                "-Isrc/include",
+                "-Lsrc/lib",
+                "-lmingw32",
+				"-std=c++20", 
+                "-lSDL2main",
+                "-lSDL2",
+				"${fileDirname}\\*.cpp",
+				"-o",
+				"${fileDirname}\\doukutsu.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "g++"
+		}
+    ]
+}
